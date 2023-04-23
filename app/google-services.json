@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "265582930827",
+    "project_id": "dineriumapp",
+    "storage_bucket": "dineriumapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:265582930827:android:808cf9225301eec11add8e",
+        "android_client_info": {
+          "package_name": "com.example.dineriumaplicacion"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "265582930827-78skmh2lrbk2cdesjfbc0o7jjh2gcfkj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeUaoLZ7YXzf-_90weTf6HrDqvTYNhc5s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "265582930827-78skmh2lrbk2cdesjfbc0o7jjh2gcfkj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:265582930827:android:4b010fdbe2d1e1c51add8e",
+        "android_client_info": {
+          "package_name": "com.example.dineriumapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "265582930827-78skmh2lrbk2cdesjfbc0o7jjh2gcfkj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeUaoLZ7YXzf-_90weTf6HrDqvTYNhc5s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "265582930827-78skmh2lrbk2cdesjfbc0o7jjh2gcfkj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
