@@ -45,10 +45,22 @@ public class activityInicio extends AppCompatActivity {
                 Configuracion();
             }
         });
+
+        btnIniObjetivos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MisObjetivos();
+            }
+        });
     }
 
     public void Configuracion() {
         Intent Configuracion = new Intent(this, activityConfiguracion.class);
         startActivity(Configuracion);
+    }
+
+    public void MisObjetivos() {
+        Intent MisObjetivos = new Intent(this, activityMisObjetivos.class);
+        startActivity(MisObjetivos);
     }
 }
