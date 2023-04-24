@@ -59,6 +59,13 @@ public class activityInicio extends AppCompatActivity {
                 Inversiones();
             }
         });
+
+        btnIniRegistrarGastos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                RegistroCategorias();
+            }
+        });
     }
 
     public void Configuracion() {
@@ -74,5 +81,10 @@ public class activityInicio extends AppCompatActivity {
     public void Inversiones() {
         Intent Inversiones = new Intent(this, activityInversiones.class);
         startActivity(Inversiones);
+    }
+
+    public void RegistroCategorias() {
+        Intent RegistroCategorias = new Intent(this, activityRegistroCategorias.class);
+        startActivity(RegistroCategorias);
     }
 }
