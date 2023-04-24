@@ -38,5 +38,17 @@ public class activityInicio extends AppCompatActivity {
         btnIniRegistrarObjetivo = (Button) findViewById(R.id.btnIniRegistrarObjetivo);
         btnIniRegistrarGastos = (Button) findViewById(R.id.btnIniRegistrarGastos);
         btnIniReporte = (Button) findViewById(R.id.btnIniReporte);
+
+        imgBtnIniConfiguracion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Configuracion();
+            }
+        });
+    }
+
+    public void Configuracion() {
+        Intent Configuracion = new Intent(this, activityConfiguracion.class);
+        startActivity(Configuracion);
     }
 }
