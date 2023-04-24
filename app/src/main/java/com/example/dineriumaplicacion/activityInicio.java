@@ -52,6 +52,13 @@ public class activityInicio extends AppCompatActivity {
                 MisObjetivos();
             }
         });
+
+        imgBtnIniInversiones.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Inversiones();
+            }
+        });
     }
 
     public void Configuracion() {
@@ -62,5 +69,10 @@ public class activityInicio extends AppCompatActivity {
     public void MisObjetivos() {
         Intent MisObjetivos = new Intent(this, activityMisObjetivos.class);
         startActivity(MisObjetivos);
+    }
+
+    public void Inversiones() {
+        Intent Inversiones = new Intent(this, activityInversiones.class);
+        startActivity(Inversiones);
     }
 }
