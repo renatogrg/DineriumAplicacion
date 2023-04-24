@@ -66,6 +66,13 @@ public class activityInicio extends AppCompatActivity {
                 RegistroCategorias();
             }
         });
+
+        btnIniReporte.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ReporteGeneral();
+            }
+        });
     }
 
     public void Configuracion() {
@@ -86,5 +93,10 @@ public class activityInicio extends AppCompatActivity {
     public void RegistroCategorias() {
         Intent RegistroCategorias = new Intent(this, activityRegistroCategorias.class);
         startActivity(RegistroCategorias);
+    }
+
+    public void ReporteGeneral() {
+        Intent ReporteGeneral = new Intent(this, activityReporteGeneral.class);
+        startActivity(ReporteGeneral);
     }
 }
