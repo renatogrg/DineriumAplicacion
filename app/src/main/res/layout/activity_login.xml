@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#5FBAA7"
+    android:paddingTop="60dp"
+    tools:context=".activityLogin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="570dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/background_login"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Bienvenido a"
+            android:textColor="@color/black"
+            android:textSize="44sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="321dp"
+            android:layout_height="178dp"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="173dp"
+                app:srcCompat="@drawable/logo" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnLoginInvitado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#E5E1E1"
+            android:text="Continuar como invitado"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/black"
+            app:cornerRadius="10dp" />
+
+        <Button
+            android:id="@+id/btnLoginGoogle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:backgroundTint="#E5E1E1"
+            android:textColor="@color/black"
+            android:text="Continuar con Google"
+            app:cornerRadius="10dp"
+            android:layout_marginBottom="15dp"
+            />
+
+        <Button
+            android:id="@+id/btnLoginFb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#E5E1E1"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="Continuar con Facebook"
+            app:cornerRadius="10dp"
+            android:layout_marginBottom="15dp"
+            />
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
