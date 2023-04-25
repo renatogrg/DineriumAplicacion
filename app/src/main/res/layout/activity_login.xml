@@ -56,7 +56,7 @@
             android:id="@+id/btnLoginGoogle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
+            android:drawableLeft="@drawable/google"
             android:backgroundTint="#E5E1E1"
             android:textColor="@color/black"
             android:text="Continuar con Google"
@@ -71,6 +71,7 @@
             android:backgroundTint="#E5E1E1"
             android:gravity="center"
             android:textColor="@color/black"
+            android:drawableLeft="@drawable/face"
             android:text="Continuar con Facebook"
             app:cornerRadius="10dp"
             android:layout_marginBottom="15dp"
