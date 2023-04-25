@@ -13,7 +13,12 @@ import android.view.animation.Animation;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.ktx.Firebase;
+
 public class Splash extends AppCompatActivity implements View.OnClickListener {
+
+    FirebaseFirestore firebaseFirestore;
     ImageView icono;
     TextView txtMensaje;
 
