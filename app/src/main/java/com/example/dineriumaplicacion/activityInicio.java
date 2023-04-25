@@ -1,5 +1,6 @@
 package com.example.dineriumaplicacion;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -12,8 +13,19 @@ import android.widget.ImageButton;
 import android.widget.ProgressBar;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class activityInicio extends AppCompatActivity {
+
+    public FirebaseFirestore firebaseFirestore;
 
     ProgressBar prbIniProgreso;
     TextView txtIniProgreso;
@@ -27,6 +39,8 @@ public class activityInicio extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inicio);
 
+        firebaseFirestore = FirebaseFirestore.getInstance();
+
         prbIniProgreso = (ProgressBar) findViewById(R.id.prbIniProgreso);
         txtIniProgreso = (TextView) findViewById(R.id.txtIniProgreso);
         edtIniAhorro = (EditText) findViewById(R.id.edtIniAhorro);
@@ -38,6 +52,27 @@ public class activityInicio extends AppCompatActivity {
         btnIniRegistrarObjetivo = (Button) findViewById(R.id.btnIniRegistrarObjetivo);
         btnIniRegistrarGastos = (Button) findViewById(R.id.btnIniRegistrarGastos);
         btnIniReporte = (Button) findViewById(R.id.btnIniReporte);
+
+        String [] OpcionesTiempo = {"Semanal", "Mensual", "Anual"};
+        ArrayAdapter <String> adapterOpcionesTiempo = new ArrayAdapter<String>(this,
+                android.R.layout.simple_dropdown_item_1line, OpcionesTiempo);
+        spnIniTiempo.setAdapter(adapterOpcionesTiempo);
+
+        btnIniRegistrarObjetivo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String objMontoAhorro = edtIniAhorro.getText().toString();
+                String objPresupuesto = edtIniPresupuesto.getText().toString();
+                String objFechaPropuesta = spnIniTiempo.getSelectedItem().toString();
+
+                if(objMontoAhorro.isEmpty() && objPresupuesto.isEmpty()){
+                    Toast.makeText(getApplicationContext(), "Ingresar TODOS los datos",
+                            Toast.LENGTH_LONG).show();
+                }else{
+                    RegistrarObjetivo(objMontoAhorro, objPresupuesto, objFechaPropuesta);
+                }
+            }
+        });
 
         imgBtnIniConfiguracion.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -73,6 +108,30 @@ public class activityInicio extends AppCompatActivity {
                 ReporteGeneral();
             }
         });
+    }
+
+    public void RegistrarObjetivo(String objMontoAhorro, String objPresupuesto, String objFechaPropuesta){
+        Map<String, Object> map = new HashMap<>();
+        map.put("objMontoAhorro", objMontoAhorro);
+        map.put("objPresupuesto", objPresupuesto);
+        map.put("objFechaPropuesta", objFechaPropuesta);
+
+        firebaseFirestore.collection("tblObjetivos").add(map).
+                addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+                @Override
+                public void onSuccess(DocumentReference documentReference) {
+                    Toast.makeText(getApplicationContext(),
+                            "Guardaste el objetivo EXITOSAMENTE",
+                            Toast.LENGTH_LONG).show();
+                }
+            }).addOnFailureListener(new OnFailureListener() {
+                        @Override
+                        public void onFailure(@NonNull Exception e) {
+                            Toast.makeText(getApplicationContext(),
+                                    "Error al ingresar a la base de datos",
+                                    Toast.LENGTH_LONG).show();
+                        }
+                    });
     }
 
     public void Configuracion() {
