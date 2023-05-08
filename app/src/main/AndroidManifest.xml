@@ -14,19 +14,20 @@
             android:exported="false" />
         <activity
             android:name=".DetalleRegistroCategorias"
-            android:exported="false" />
+            android:exported="true" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
         <activity
             android:name=".ConfiguracionHerramientas"
             android:exported="false" />
         <activity
             android:name=".ConfiguracionPerfilUsuario"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:exported="false"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
         <activity
             android:name=".Splash"
             android:exported="false" />
