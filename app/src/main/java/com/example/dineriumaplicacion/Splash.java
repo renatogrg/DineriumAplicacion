@@ -18,7 +18,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 
 public class Splash extends AppCompatActivity implements View.OnClickListener {
 
-    //FirebaseFirestore firebaseFirestore;
+    FirebaseFirestore firebaseFirestore;
 
 
     ImageView icono;

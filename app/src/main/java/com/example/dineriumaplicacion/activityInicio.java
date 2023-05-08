@@ -34,6 +34,7 @@ public class activityInicio extends AppCompatActivity {
     ImageButton imgBtnIniConfiguracion, imgBtnIniInversiones;
     Button btnIniObjetivos, btnIniRegistrarObjetivo, btnIniRegistrarGastos, btnIniReporte;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,6 +53,7 @@ public class activityInicio extends AppCompatActivity {
         btnIniRegistrarObjetivo = (Button) findViewById(R.id.btnIniRegistrarObjetivo);
         btnIniRegistrarGastos = (Button) findViewById(R.id.btnIniRegistrarGastos);
         btnIniReporte = (Button) findViewById(R.id.btnIniReporte);
+
 
         String [] OpcionesTiempo = {"Semanal", "Mensual", "Anual"};
         ArrayAdapter <String> adapterOpcionesTiempo = new ArrayAdapter<String>(this,
@@ -151,7 +153,9 @@ public class activityInicio extends AppCompatActivity {
 
     public void RegistroCategorias() {
         Intent RegistroCategorias = new Intent(this, activityRegistroCategorias.class);
+        getIntent().putExtra("presupuesto", edtIniPresupuesto.getText().toString());
         startActivity(RegistroCategorias);
+
     }
 
     public void ReporteGeneral() {
