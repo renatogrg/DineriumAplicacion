@@ -9,4 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="miVerde">#76BCAB</color>
     <color name="miVerdeClaro">#AFEFC5</color>
+    <color name="VerdeFondo">#5FBAA7</color>
+    <color name="FondobtnVolver">#BDC5C4</color>
+    <color name="azul">#2D3FA1</color>
 </resources>
