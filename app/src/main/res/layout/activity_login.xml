@@ -43,16 +43,6 @@
         </LinearLayout>
 
         <Button
-            android:id="@+id/btnLoginInvitado"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#E5E1E1"
-            android:text="Continuar como invitado"
-            android:layout_marginBottom="15dp"
-            android:textColor="@color/black"
-            app:cornerRadius="10dp" />
-
-        <Button
             android:id="@+id/btnLoginGoogle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -61,7 +51,8 @@
             android:textColor="@color/black"
             android:text="Continuar con Google"
             app:cornerRadius="10dp"
-            android:layout_marginBottom="15dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="45dp"
             />
 
         <Button
