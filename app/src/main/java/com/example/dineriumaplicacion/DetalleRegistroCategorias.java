@@ -58,6 +58,6 @@ public class DetalleRegistroCategorias extends AppCompatActivity implements View
     public void onClick(View view) {
         Intent intent = new Intent(this, DetalleRegistro.class);
         startActivity(intent);
-        //nuevo intiti que esta llamando al login class
+
     }
 }

@@ -14,11 +14,13 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.firebase.ktx.Firebase;
+//import com.google.firebase.ktx.Firebase;
 
 public class Splash extends AppCompatActivity implements View.OnClickListener {
 
     FirebaseFirestore firebaseFirestore;
+
+
     ImageView icono;
     TextView txtMensaje;
 
@@ -71,7 +73,7 @@ public class Splash extends AppCompatActivity implements View.OnClickListener {
         },tiempo);
     }
     public void llamar(){
-        Intent intent= new Intent(this, MainActivity.class);
+        Intent intent= new Intent(this, Login.class);
         startActivity(intent);
     }
 

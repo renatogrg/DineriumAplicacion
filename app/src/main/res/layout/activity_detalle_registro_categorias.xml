@@ -261,7 +261,7 @@
                             <androidx.recyclerview.widget.RecyclerView
                                 android:id="@+id/recycler_tareas"
                                 android:layout_width="match_parent"
-                                android:layout_height="120dp"
+                                android:layout_height="130dp"
                                 android:typeface="monospace" />
 
 
@@ -276,7 +276,6 @@
                                     android:layout_width="307dp"
                                     android:layout_height="28dp"
                                     android:layout_marginStart="20dp"
-                                    android:layout_weight="1"
                                     android:background="@android:color/transparent"
                                     android:drawableStart="@drawable/ic_agregar"
                                     android:gravity=""
@@ -285,7 +284,6 @@
                                     android:text="Agregar"
                                     android:textColor="@color/black"
                                     android:layout_marginTop="3dp"
-                                    android:drawablePadding="2dp"
                                     android:textStyle="bold" />
 
                             </LinearLayout>
