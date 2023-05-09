@@ -13,7 +13,6 @@ import android.widget.TextView;
 public class activityRegistroCategorias extends AppCompatActivity {
     Button btnVolver;
     TextView txtPresupuesto;
-    String presupuesto;
 
 
     @Override
