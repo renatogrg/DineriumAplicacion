@@ -25,7 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:fontFamily="sans-serif-condensed-medium"
-        android:text="Dinerium"
+        android:text="Dinetio"
         android:textColor="@color/white"
         android:textSize="70sp"
         android:layout_marginBottom="-20dp"
