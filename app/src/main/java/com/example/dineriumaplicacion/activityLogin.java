@@ -14,7 +14,7 @@ public class activityLogin extends AppCompatActivity {
     Button btnGoogle, btnFb;
     FirebaseAuth miAuth;
     GoogleSignInClient mGoogleSignInClient;
-    CallbackManager mCallbackManager;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
