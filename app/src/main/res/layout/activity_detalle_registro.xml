@@ -33,7 +33,7 @@
                     android:layout_height="40dp"
                     android:typeface="monospace"
                     android:gravity="center"
-                    android:text="DINERIUM"
+                    android:text="DINETIO"
                     android:textColor="@color/white"
                     android:textSize="30dp"
                     android:textStyle="bold"
