@@ -23,13 +23,12 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="500dp"
+        android:layout_height="wrap_content"
         android:layout_marginHorizontal="30dp"
         android:layout_marginVertical="10dp"
         android:background="@drawable/background_login"
         android:orientation="vertical"
-        android:paddingTop="10dp"
-        >
+        android:paddingTop="10dp">
 
 
         <TextView
@@ -77,9 +76,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:textSize="16sp"
                     android:textColor="#000000"
-                    android:textStyle="bold"/>
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
 
             </FrameLayout>
 
@@ -90,8 +89,7 @@
             android:layout_height="match_parent"
             android:background="@drawable/background_gastototal"
             android:orientation="vertical"
-            android:paddingTop="20dp"
-            >
+            android:paddingTop="20dp">
 
             <TextView
                 android:id="@+id/txtGastoTotal"
@@ -110,8 +108,8 @@
                 android:paddingRight="20dp"
                 android:text="RESTANTE: S/ 120"
                 android:textAlignment="textEnd"
-                android:textSize="10dp"
-                android:textColor="#000000"/>
+                android:textColor="#000000"
+                android:textSize="10dp" />
 
             <ProgressBar
                 android:id="@+id/progressBar"
@@ -119,12 +117,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingLeft="20dp"
-                android:paddingRight="20dp"
-                />
+                android:paddingRight="20dp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="246dp"
+                android:layout_height="wrap_content"
                 android:background="@drawable/background_misgastos"
                 android:orientation="vertical"
                 android:paddingLeft="20dp"
@@ -145,9 +142,85 @@
                     android:layout_height="1dp"
                     android:background="@android:color/black" />
 
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="236dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/background_fondodetalle05"
+                    app:layout_constraintBottom_toTopOf="@+id/btn_Registro_Volver"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="top"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_weight="1"
+                                android:text="Mis Gastos"
+                                android:textStyle="bold"
+                                android:typeface="monospace" />
+
+                        </LinearLayout>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recycler_tareas"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:typeface="monospace" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+
+                            <Button
+                                android:id="@+id/btnAgregar"
+                                android:layout_width="307dp"
+                                android:layout_height="28dp"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="3dp"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:drawableStart="@drawable/ic_agregar"
+                                android:drawablePadding="2dp"
+                                android:paddingBottom="2dp"
+                                android:gravity=""
+                                android:text="Agregar"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"
+                                android:textStyle="bold"
+                                android:typeface="monospace" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
 
             </LinearLayout>
-
 
 
         </LinearLayout>
