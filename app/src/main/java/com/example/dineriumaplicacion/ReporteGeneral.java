@@ -125,7 +125,7 @@ public class ReporteGeneral extends AppCompatActivity {
     }
 
     public void VolverInicio(){
-        Intent Inicio = new Intent(this, com.example.dineriumaplicacion.Inicio.class);
+        Intent Inicio = new Intent(this, com.example.dineriumaplicacion.InicioProceso.class);
         startActivity(Inicio);
     }
 
