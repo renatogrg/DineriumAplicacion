@@ -144,6 +144,99 @@
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:background="@android:color/black" />
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="212dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/background_fondodetalle05"
+                    app:layout_constraintBottom_toTopOf="@+id/btn_Registro_Volver"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="top"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_weight="1"
+                                android:text="Mis Gastos"
+                                android:typeface="monospace"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recycler_tareas"
+                            android:layout_width="match_parent"
+                            android:layout_height="130dp"
+                            android:typeface="monospace" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+
+                            <Button
+                                android:id="@+id/btnAgregar"
+                                android:layout_width="307dp"
+                                android:layout_height="28dp"
+                                android:layout_marginStart="20dp"
+                                android:background="@android:color/transparent"
+                                android:drawableStart="@drawable/ic_agregar"
+                                android:gravity=""
+                                android:textSize="10sp"
+                                android:typeface="monospace"
+                                android:text="Agregar"
+                                android:textColor="@color/black"
+                                android:layout_marginTop="3dp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <Button
+                    android:id="@+id/btn_Registro_Volver"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="16dp"
+                    android:backgroundTint="@color/FondobtnVolver"
+                    android:text="Volver"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:typeface="monospace"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+
 
 
             </LinearLayout>
