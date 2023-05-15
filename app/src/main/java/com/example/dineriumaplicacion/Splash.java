@@ -32,6 +32,7 @@ public class Splash extends AppCompatActivity implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+        firebaseFirestore=FirebaseFirestore.getInstance();
         icono = findViewById(R.id.imgLogo);
         txtMensaje= findViewById(R.id.txtMensaje);
         Animation animacion;
@@ -46,7 +47,7 @@ public class Splash extends AppCompatActivity implements View.OnClickListener {
     private void rotacion(View view, int dur){
         animador = ObjectAnimator.ofFloat(view,"rotation",0,360);
         animador.setDuration(dur);
-        //QUE LA ANIMACION SE EJECUTE AL MISMO TIEMPO QUE OTROS
+
         AnimatorSet animatorSet= new AnimatorSet();
         animatorSet.play(animador);
         animatorSet.start();
@@ -72,7 +73,7 @@ public class Splash extends AppCompatActivity implements View.OnClickListener {
         },tiempo);
     }
     public void llamar(){
-        Intent intent= new Intent(this, activityLogin.class);
+        Intent intent= new Intent(this, Login.class);
         startActivity(intent);
     }
 

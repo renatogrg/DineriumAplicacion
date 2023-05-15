@@ -10,29 +10,30 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DineriumAplicacion">
         <activity
-            android:name=".activityLogin"
+            android:name=".DetalleRegistro"
             android:exported="false" />
         <activity
-            android:name=".activityInicio"
-            android:exported="false" />
-        <activity
-            android:name=".activityRegistroCategorias"
-            android:exported="false" />
-
-
-        <activity
-            android:name=".Splash"
-            android:exported="false"/>
-
-
-        <activity
-            android:name=".MainActivity"
+            android:name=".DetalleRegistroCategorias"
             android:exported="true" >
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
+
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
-        </activity>
+    </activity>
+        <activity
+            android:name=".ConfiguracionHerramientas"
+            android:exported="false" />
+        <activity
+            android:name=".ConfiguracionPerfilUsuario"
+            android:exported="false"/>
+
+        <activity
+            android:name=".Splash"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

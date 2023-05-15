@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfiguracionHerramientas">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/VerdeFondo">
+    </TextView>
+
+
+    <TextView
+        android:layout_width="360dp"
+        android:layout_height="590dp"
+        android:layout_gravity="top|center"
+        android:layout_margin="20dp"
+        android:background="@drawable/fondoblanco"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|start"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="50dp"
+            android:padding="5dp"
+            android:text="Idioma"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+        <Spinner
+            android:id="@+id/spnIdioma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-30dp"
+            android:layout_marginStart="250dp"
+            android:entries="@array/Idiomas"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|start"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="50dp"
+            android:padding="5dp"
+            android:text="Moneda"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+        <Spinner
+            android:id="@+id/spnMoneda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-30dp"
+            android:layout_marginStart="250dp"
+            android:entries="@array/Moneda"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|start"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="50dp"
+            android:padding="5dp"
+            android:text="Recibir notificaciones"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipNotificaciones"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="240dp"
+            android:layout_marginTop="-40dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|start"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="50dp"
+            android:padding="5dp"
+            android:text="Permitir usar ubicación"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipUbicacion"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="240dp"
+            android:layout_marginTop="-40dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|start"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="20dp"
+            android:padding="5dp"
+            android:text="Tema oscuro"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipTema"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="240dp"
+            android:layout_marginTop="-40dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|start"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="50dp"
+            android:padding="5dp"
+            android:text="Déjanos un comentario"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/btnPremium"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/FondobtnVolver"
+            android:text="Ser premium"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:textStyle="bold"></Button>
+
+        <Button
+            android:id="@+id/btnValorarApp"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/FondobtnVolver"
+            android:text="Valorar la aplicación"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:textStyle="bold"></Button>
+
+        <Button
+            android:id="@+id/btnEliminarDatos"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/FondobtnVolver"
+            android:text="Eliminar mis datos"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:textStyle="bold"></Button>
+        <ImageButton
+            android:id="@+id/btnUsuario1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:src="@drawable/ic_usuario"
+            android:backgroundTint="@color/white"
+            android:onClick="llamarConfiguracionPerfilUsuario"></ImageButton>
+
+        <ImageButton
+            android:id="@+id/btnHerramientas1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="220dp"
+            android:src="@drawable/ic_herramienta"
+            android:layout_marginTop="-70dp"
+            android:backgroundTint="@color/white"
+          ></ImageButton>
+
+
+        <Button
+            android:id="@+id/btnVolverHerramientas"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/FondobtnVolver"
+            android:text="Volver"
+            android:textColor="@color/black"></Button>
+
+
+    </LinearLayout>
+</FrameLayout>

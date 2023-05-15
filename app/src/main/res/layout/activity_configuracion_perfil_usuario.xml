@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfiguracionPerfilUsuario">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/VerdeFondo">
+    </TextView>
+
+
+    <TextView
+        android:layout_width="360dp"
+        android:layout_height="590dp"
+        android:layout_gravity="top|center"
+        android:layout_margin="20dp"
+        android:background="@drawable/fondoblanco"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            android:layout_marginTop="30dp"
+            android:padding="5dp"
+            android:text="MI PERFIL"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="-10dp"
+            android:background="@drawable/ic_usuario"></ImageView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="-100dp"
+            android:text="¡Hola Miguel!"
+            android:textSize="18sp"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="Mi Nickname"
+            android:textColor="@color/black"
+            android:textSize="16sp"></TextView>
+
+        <EditText
+            android:id="@+id/edtNickname"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-10dp"></EditText>
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="INFORMACIÓN PERSONAL"
+            android:textColor="@color/azul"
+            android:textSize="16sp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:text="Nombres"
+            android:textSize="16sp"
+            android:textStyle="bold"></TextView>
+
+
+        <EditText
+            android:id="@+id/edtNombres"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="-10dp"
+            android:padding="12dp"></EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:text="Apellidos"
+            android:textSize="16sp"
+            android:textStyle="bold"></TextView>
+
+        <EditText
+            android:id="@+id/edtApellidos"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="-10dp"
+            android:padding="12dp"></EditText>
+
+        <Button
+            android:id="@+id/btnIngresarCuentaGoogle"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/FondobtnVolver"
+            android:text="Ingresar con una cuenta de Google"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:textStyle="bold"></Button>
+
+        <Button
+            android:id="@+id/btnCambiarUsuario"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/FondobtnVolver"
+            android:text="Cambiar de usuario"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:textStyle="bold"></Button>
+
+        <ImageButton
+            android:id="@+id/btnUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:src="@drawable/ic_usuario"
+            android:backgroundTint="@color/white"></ImageButton>
+
+        <ImageButton
+            android:id="@+id/btnHerramientas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="220dp"
+            android:src="@drawable/ic_herramienta"
+            android:layout_marginTop="-70dp"
+            android:backgroundTint="@color/white"
+            android:onClick="llamarConfiguracionHerramientas"></ImageButton>
+
+        <Button
+            android:id="@+id/btnVolverPerfilUsuario"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/FondobtnVolver"
+            android:text="Volver"
+            android:textColor="@color/black"></Button>
+    </LinearLayout>
+</FrameLayout>

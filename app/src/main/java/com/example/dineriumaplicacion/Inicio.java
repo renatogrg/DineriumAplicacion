@@ -23,7 +23,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import java.util.HashMap;
 import java.util.Map;
 
-public class activityInicio extends AppCompatActivity {
+public class Inicio extends AppCompatActivity {
 
     public FirebaseFirestore firebaseFirestore;
 
@@ -137,29 +137,29 @@ public class activityInicio extends AppCompatActivity {
     }
 
     public void Configuracion() {
-        Intent Configuracion = new Intent(this, activityConfiguracion.class);
+        Intent Configuracion = new Intent(this, com.example.dineriumaplicacion.Configuracion.class);
         startActivity(Configuracion);
     }
 
     public void MisObjetivos() {
-        Intent MisObjetivos = new Intent(this, activityMisObjetivos.class);
+        Intent MisObjetivos = new Intent(this, com.example.dineriumaplicacion.MisObjetivos.class);
         startActivity(MisObjetivos);
     }
 
     public void Inversiones() {
-        Intent Inversiones = new Intent(this, activityInversiones.class);
+        Intent Inversiones = new Intent(this, com.example.dineriumaplicacion.Inversiones.class);
         startActivity(Inversiones);
     }
 
     public void RegistroCategorias() {
-        Intent RegistroCategorias = new Intent(this, activityRegistroCategorias.class);
+        Intent RegistroCategorias = new Intent(this, com.example.dineriumaplicacion.RegistroCategorias.class);
         getIntent().putExtra("presupuesto", edtIniPresupuesto.getText().toString());
         startActivity(RegistroCategorias);
 
     }
 
     public void ReporteGeneral() {
-        Intent ReporteGeneral = new Intent(this, activityReporteGeneral.class);
+        Intent ReporteGeneral = new Intent(this, com.example.dineriumaplicacion.ReporteGeneral.class);
         startActivity(ReporteGeneral);
     }
 }

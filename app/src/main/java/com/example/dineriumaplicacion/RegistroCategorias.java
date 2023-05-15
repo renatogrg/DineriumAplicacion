@@ -6,11 +6,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 
 
-public class activityRegistroCategorias extends AppCompatActivity {
+public class RegistroCategorias extends AppCompatActivity {
     Button btnVolver;
     TextView txtPresupuesto;
 
@@ -31,7 +30,7 @@ public class activityRegistroCategorias extends AppCompatActivity {
         btnVolver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(activityRegistroCategorias.this, activityInicio.class);
+                Intent intent = new Intent(RegistroCategorias.this, Inicio.class);
                 startActivity(intent);
             }
         });
