@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class activityRegistroCategorias extends AppCompatActivity {
+public class RegistroCategorias extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

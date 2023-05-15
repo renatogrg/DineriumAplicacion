@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class activityMisObjetivos extends AppCompatActivity {
+public class Inversiones extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mis_objetivos);
+        setContentView(R.layout.activity_inversiones);
     }
 }
