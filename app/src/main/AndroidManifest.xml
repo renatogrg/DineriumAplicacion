@@ -17,7 +17,7 @@
             android:exported="false" />
         <activity
             android:name=".ConfiguracionPerfilUsuario"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".DetalleRegistro"
             android:exported="false" />
@@ -26,6 +26,9 @@
             android:exported="false" />
         <activity
             android:name=".Inicio"
+            android:exported="false"/>
+        <activity
+            android:name=".InicioProceso"
             android:exported="false" />
         <activity
             android:name=".Inversiones"
@@ -34,6 +37,9 @@
             android:name=".Login"
             android:exported="false" />
         <activity
+            android:name=".MainActivity"
+            android:exported="true"></activity>
+        <activity
             android:name=".MisObjetivos"
             android:exported="false" />
         <activity
@@ -41,19 +47,14 @@
             android:exported="false" />
         <activity
             android:name=".ReporteGeneral"
-            android:exported="false" />
+            android:exported="false"/>
         <activity
             android:name=".Splash"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".MainActivity"
-            android:exported="false" />
     </application>
-
 </manifest>
