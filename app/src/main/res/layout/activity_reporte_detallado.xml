@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReporteDetallado">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/VerdeFondo">
+    </TextView>
+
+
+    <TextView
+        android:layout_width="360dp"
+        android:layout_height="560dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@color/white"></TextView>
+
+
+    <Button
+        android:id="@+id/btnVolverHerramientas"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/FondobtnVolver"
+        android:text="Volver"
+        android:textColor="@color/black"></Button>
+
+
+</FrameLayout>

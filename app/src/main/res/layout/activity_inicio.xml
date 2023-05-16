@@ -194,7 +194,7 @@
             android:layout_height="40dp"
             android:layout_gravity="center"
             android:backgroundTint="#FFFFFF"
-            android:text="Resgistrar Gastos"
+            android:text="Registrar Gastos"
             android:textColor="@color/black"
             app:cornerRadius="8dp" />
 

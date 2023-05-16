@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">DineriumAplicacion</string>
+    <array name="Idiomas">
+        <item>Español</item>
+        <item>Inglés</item>
+    </array>
+    <array name="Moneda">
+        <item>Sol</item>
+        <item>Dólar</item>
+        <item>Euro</item>
+    </array>
+
 </resources>

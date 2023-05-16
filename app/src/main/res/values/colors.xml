@@ -7,4 +7,16 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="miVerde">#76BCAB</color>
+    <color name="miVerdeClaro">#AFEFC5</color>
+    <color name="VerdeFondo">#5FBAA7</color>
+    <color name="FondobtnVolver">#BDC5C4</color>
+    <color name="azul">#2D3FA1</color>
+    <color name="Color_fondo_detalle">#30D5EA</color>
+    <color name="Color_fondo_detalle2">#DDD9E4</color>
+    <color name="Color_fondo_detalle3">#E4DEDE</color>
+    <color name="Color_fondo_detalle4">#CAE5D9</color>
+    <color name="Color06">#182693</color>
+    <color name="Color07">#5B5B5B</color>
+    <color name="Color08">#1b79bb</color>
 </resources>
