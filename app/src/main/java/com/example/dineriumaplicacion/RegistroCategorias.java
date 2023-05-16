@@ -8,7 +8,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-
 public class RegistroCategorias extends AppCompatActivity {
     Button btnVolver;
     TextView txtPresupuesto;

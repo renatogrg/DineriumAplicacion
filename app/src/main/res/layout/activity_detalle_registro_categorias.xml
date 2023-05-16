@@ -286,6 +286,7 @@
                                     android:paddingBottom="2dp"
                                     android:textColor="@color/black"
                                     android:layout_marginTop="3dp"
+                                    android:paddingBottom="1dp"
                                     android:textStyle="bold" />
 
                             </LinearLayout>

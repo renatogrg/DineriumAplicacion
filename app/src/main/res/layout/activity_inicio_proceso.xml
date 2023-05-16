@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="center"
-    android:background="#5FBAA7"
     android:orientation="vertical"
-    tools:context=".Inicio">
+    tools:context=".InicioProceso"
+    android:layout_gravity="center"
+    android:background="#5FBAA7">
 
     <ImageButton
         android:id="@+id/imgBtnIniConfiguracion"
@@ -26,23 +26,22 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="310dp"
         android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_marginHorizontal="30dp"
             android:layout_marginVertical="10dp"
             android:background="@drawable/bordes_verde_oscuro"
-            android:orientation="vertical"
-            android:padding="5dp">
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-
+                android:layout_marginVertical="5dp"
                 android:text="Mi Objetivo"
                 android:textColor="@color/white"
                 android:textStyle="bold" />
@@ -56,97 +55,32 @@
                 android:text="Mis Objetivos"
                 android:textColor="@color/black"
                 app:cornerRadius="8dp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="30dp"
-            android:layout_marginVertical="10dp"
-            android:background="@drawable/bordes_blanco"
-            android:orientation="vertical"
-            android:padding="10dp">
 
             <TextView
+                android:id="@+id/txtIniProgreso"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Mi Ahorro Objetivo"
+                android:layout_gravity="left"
+                android:layout_marginHorizontal="20dp"
+                android:text="0% Cumplido"
                 android:textColor="@color/black"
-                android:textStyle="bold" />
+                android:textStyle="bold"></TextView>
 
-            <LinearLayout
-                android:layout_width="wrap_content"
+            <ProgressBar
+                android:id="@+id/prbIniProgreso"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvIniProceso"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginVertical="3dp"
-                android:orientation="horizontal">
+                android:layout_margin="15dp"/>
 
-                <EditText
-                    android:id="@+id/edtIniAhorro"
-                    android:layout_width="130dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="10dp"
-                    android:background="@drawable/bordes_gris_claro"
-                    android:ems="10"
-                    android:gravity="center"
-                    android:hint="S/. "
-                    android:inputType="numberDecimal" />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="30dp"
-                    android:layout_marginHorizontal="10dp"
-                    android:background="@drawable/bordes_gris_claro"
-                    android:orientation="vertical">
-
-                    <Spinner
-                        android:id="@+id/spnIniTiempo"
-                        android:layout_width="150dp"
-                        android:layout_height="wrap_content" />
-                </LinearLayout>
-
-            </LinearLayout>
         </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="30dp"
-            android:layout_marginVertical="10dp"
-            android:background="@drawable/bordes_blanco"
-            android:orientation="vertical"
-            android:padding="10dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Mi Presupuesto"
-                android:textColor="@color/black"
-                android:textStyle="bold" />
-
-            <EditText
-                android:id="@+id/edtIniPresupuesto"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginVertical="2dp"
-                android:background="@drawable/bordes_gris_claro"
-                android:ems="10"
-                android:gravity="center"
-                android:hint="850"
-                android:inputType="numberDecimal" />
-        </LinearLayout>
-
-        <Button
-            android:id="@+id/btnIniRegistrarObjetivo"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginHorizontal="30dp"
-            android:backgroundTint="#479585"
-            android:text="Registrar Objetivo"
-            app:cornerRadius="8dp" />
 
     </LinearLayout>
 
@@ -190,7 +124,7 @@
             android:layout_height="40dp"
             android:layout_gravity="center"
             android:backgroundTint="#FFFFFF"
-            android:text="Registrar Gastos"
+            android:text="Resgistrar Gastos"
             android:textColor="@color/black"
             app:cornerRadius="8dp" />
 
@@ -203,6 +137,7 @@
             android:text="Ver Categorias"
             android:textColor="@color/black"
             app:cornerRadius="8dp" />
+
     </LinearLayout>
 
     <Button
@@ -210,7 +145,7 @@
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginHorizontal="30dp"
-        android:layout_marginVertical="10dp"
+        android:layout_marginVertical="15dp"
         android:backgroundTint="#479585"
         android:text="Ver reporte"
         app:cornerRadius="8dp" />

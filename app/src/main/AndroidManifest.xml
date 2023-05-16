@@ -10,20 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DineriumAplicacion">
         <activity
-            android:name=".ReporteDetallado"
+            android:name=".Configuracion"
             android:exported="false" />
-        <activity
-            android:name=".DetalleRegistro"
-            android:exported="false" />
-        <activity
-            android:name=".DetalleRegistroCategorias"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
         <activity
             android:name=".ConfiguracionHerramientas"
             android:exported="false" />
@@ -31,11 +19,43 @@
             android:name=".ConfiguracionPerfilUsuario"
             android:exported="false" />
         <activity
-            android:name=".Splash"
+            android:name=".DetalleRegistro"
+            android:exported="false" />
+        <activity
+            android:name=".DetalleRegistroCategorias"
+            android:exported="false" />
+
+        <activity
+            android:name=".Inicio"
+            android:exported="true">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+        <activity
+            android:name=".InicioProceso"
+            android:exported="false" />
+        <activity
+            android:name=".Inversiones"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".MisObjetivos"
             android:exported="false" />
+        <activity
+            android:name=".RegistroCategorias"
+            android:exported="false" />
+        <activity
+            android:name=".ReporteGeneral"
+            android:exported="false"/>
+        <activity
+            android:name=".Splash"
+            android:exported="false"/>
     </application>
-
 </manifest>
